@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tela de Login - Exemplo</title>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    
+    <body>
+        <form>
+            <h3>Login</h3>
+            <input id="email" type="text" nome="email" placeholder="Digite seu email">
+            <input id="password" type="password" nome="senha" placeholder="Digite sua senha">
+            <input type="submit" nome="acao" value="Enviar">
+        </form>
+
+        <script>
+            var email = document.getElementById('email')
+            var password = document.getElementById('password')
+
+            email.addEventListener('focus', ()=>{
+                email.style.borderColor = "#darkslateblue";
+            });
+            email.addEventListener('blur', ()=>{
+                email.style.borderColor = "#ccc";
+            });
+
+            password.addEventListener('focus', ()=>{
+                password.style.borderColor = "#darkslateblue";
+            });
+            password.addEventListener('blur', ()=>{
+                password.style.borderColor = "#ccc";
+            });
+
+        </script>
+    
+    </body>
+</html>
